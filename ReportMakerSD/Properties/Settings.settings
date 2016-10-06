@@ -1,0 +1,51 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ReportMakerSD.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="FolderWithExportSdDefault" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Downloads</Value>
+    </Setting>
+    <Setting Name="FilialBranchName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ОДУ Северо-Запада:Архангельское РДУ:Балтийское РДУ:Карельское РДУ:Кольское РДУ:Коми РДУ:Ленинградское РДУ:Новгородское РДУ</Value>
+    </Setting>
+    <Setting Name="FGPNames" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Администраторы справочников Сервис Деск:АСДОУ:АСДУ - Заявки и ремонты:АСДУ - локальные системы:АСДУ - ОИК:АСДУ - телемеханика:АСДУ - технологические системы:Базовая поддержка пользователей:Дежурные специалисты ИТ:Информационная безопасность:Каналы связи:Поддержка аппаратных платформ:Порталы и информационно-справочные системы:Прочие:Руководство ИТ:Сервис Деск:Сети передачи данных:Системное администрирование:Телефония, конференцсвязь:Финансово-экономическая деятельность</Value>
+    </Setting>
+    <Setting Name="WayOfGivingTreatments" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Документооборот:По почте:Другое:Личное обращение:По телефону:Интернет портал:Консоль самообслуживания:Прямой ввод:Событие системы мониторинга</Value>
+    </Setting>
+    <Setting Name="ColumnsFilterNames" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Остальные колонки:Дата окончания регистрации:Номер:Статус:Организация заявителя:Заявитель:ФГП:Исполнитель:Услуга:Тема:Дата и время решения:Решение:Способ подачи обращения</Value>
+    </Setting>
+    <Setting Name="StatusesNames" Type="System.String" Scope="User">
+      <Value Profile="(Default)">4 В ожидании:3 Выполняется:2 Назначен:1 Новый</Value>
+    </Setting>
+    <Setting Name="ParsingStatus" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="ProjectName" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">ReportMakerSD</Value>
+    </Setting>
+    <Setting Name="TimeFromHour" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">8</Value>
+    </Setting>
+    <Setting Name="TimeToHour" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">16</Value>
+    </Setting>
+    <Setting Name="TimeFromMinute" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">30</Value>
+    </Setting>
+    <Setting Name="TimeToMinute" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">15</Value>
+    </Setting>
+    <Setting Name="ReportTO" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="TO" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ТО \\</Value>
+    </Setting>
+    <Setting Name="ReportRDU" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
