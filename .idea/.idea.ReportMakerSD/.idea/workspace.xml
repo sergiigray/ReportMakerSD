@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0649ad1a-27e1-42a2-a502-649122af56d2" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../ReportMakerSD/MainForm.cs" afterPath="$PROJECT_DIR$/../../ReportMakerSD/MainForm.cs" />
+    </list>
+    <ignored path="ReportMakerSD.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="ReportMakerSD" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="Program.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../ReportMakerSD/Program.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1469543535859" expanded="true" signature="6:124" ph="..." />
+                <marker date="1469543535859" expanded="true" signature="149:507" ph="{...}" />
+                <marker date="1469543535859" expanded="true" signature="176:505" ph="{...}" />
+                <marker date="1469543535859" expanded="true" signature="191:275" ph="/// Главная точка входа для приложения. ... " />
+                <marker date="1469543535859" expanded="true" signature="322:499" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainForm.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../ReportMakerSD/MainForm.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1475764038418" expanded="true" signature="6:269" ph="..." />
+                <marker date="1475764038418" expanded="true" signature="294:35826" ph="{...}" />
+                <marker date="1475764038418" expanded="true" signature="337:35824" ph="{...}" />
+                <marker date="1475764038418" expanded="true" signature="837:1150" ph="/* массив для отчетов. Для всех сразу. Позволит сначала выбрать все необходимые данные и далее отправив массив в  ... */" />
+                <marker date="1475764038418" expanded="true" signature="1244:8838" ph="{...}" />
+                <marker date="1475764038418" expanded="true" signature="2997:3105" ph="/* if (fileSI.Extension == &quot;.xls&quot; | fileSI.Extension == &quot;.xlsx&quot;)//добавить нужные форматы ... */" />
+                <marker date="1475764038418" expanded="true" signature="5327:5664" ph="/* Указатели обязательных полей на №столбцов в исходных данных ... */" />
+                <marker date="1475764038418" expanded="true" signature="6745:6984" ph="/* Наименование филиала (замена nameODU &amp;etc), строки (замена rowNumberODU&amp;etc), счетчик (замена countODU &amp;etc) ... */" />
+                <marker date="1475764038418" expanded="true" signature="8941:9263" ph="{...}" />
+                <marker date="1475764038418" expanded="true" signature="9019:9212" ph="/* textBox_DebugInfo.SelectionStart = textBox_DebugInfo.Text.Length; ... */" />
+                <marker date="1475764038418" expanded="true" signature="9405:9426" ph="{...}" />
+                <marker date="1475764038418" expanded="true" signature="9512:9624" ph="/* Загрузка данных из файла. ... */" />
+                <marker date="1475764038418" expanded="true" signature="9624:12793" ph="{...}" />
+                <marker date="1475764038418" expanded="true" signature="10160:10398" ph="/* FileName = &quot;D:\\0\\export.xlsx&quot;; ... */" />
+                <marker date="1475764038418" expanded="true" signature="10720:10883" ph="/* Ranges openRange = null; ... */" />
+                <marker date="1475764038418" expanded="true" signature="11582:12013" ph="/* Подготовка к убийству процесса Excel ... */" />
+                <marker date="1475764038418" expanded="true" signature="12635:12740" ph="/* Убийство процесса Excel ... */" />
+                <marker date="1475764038418" expanded="true" signature="12964:18471" ph="{...}" />
+                <marker date="1475764038418" expanded="true" signature="13862:13932" ph="/* Ширина колонок ... */" />
+                <marker date="1475764038418" expanded="true" signature="15707:15777" ph="/* Форматирование ... */" />
+                <marker date="1475764038418" expanded="true" signature="16649:16922" ph="/* openbook.Sheets[i].Range[openbook.Sheets[i].cells[r, 1], openbook.Sheets[i].cells[r, NumberCol]].HorizontalAli ... */" />
+                <marker date="1475764038418" expanded="true" signature="17829:17959" ph="/* oExcelApp.Interactive = true; ... */" />
+                <marker date="1475764038418" expanded="true" signature="18612:19233" ph="{...}" />
+                <marker date="1475764038418" expanded="true" signature="18906:19162" ph="/* ? Properties.Settings.Default.FolderWithExportSdDefault = openFile.FileName; ... */" />
+                <marker date="1475764038418" expanded="true" signature="19314:19369" ph="/* Отправка писем с отчетами. ... */" />
+                <marker date="1475764038418" expanded="true" signature="19369:22980" ph="{...}" />
+                <marker date="1475764038418" expanded="true" signature="19392:22969" ph="/* string usersODU = &quot;kava@odusz.so-ups.ru; adv@odusz.so-ups.ru; nikolaev@odusz.so-ups.ru; smirnov@odusz.so-ups.r ... */" />
+                <marker date="1475764038418" expanded="true" signature="23082:35818" ph="{...}" />
+                <marker date="1475764038418" expanded="true" signature="25043:25380" ph="/* Формируем отчет по подрядным организациям ... */" />
+                <marker date="1475764038418" expanded="true" signature="29749:29832" ph="/* временно ... */" />
+                <marker date="1475764038418" expanded="true" signature="29890:30224" ph="/* Формируем отчет: &quot;Нерешенные обращения по РДУ за период&quot;. ... */" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainForm.Designer.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../../ReportMakerSD/MainForm.Designer.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1474367036073" expanded="true" signature="23:11119" ph="{...}" />
+                <marker date="1474367036073" expanded="true" signature="52:11117" ph="{...}" />
+                <marker date="1474367036073" expanded="true" signature="67:153" ph="/// Обязательная переменная конструктора. ... " />
+                <marker date="1474367036073" expanded="true" signature="231:426" ph="/// Освободить все используемые ресурсы. ... " />
+                <marker date="1474367036073" expanded="true" signature="482:656" ph="{...}" />
+                <marker date="1474367036073" expanded="true" signature="666:10234" ph="Код, автоматически созданный конструктором форм Windows" />
+                <marker date="1474367036073" expanded="true" signature="739:908" ph="/// Требуемый метод для поддержки конструктора — не изменяйте  ... " />
+                <marker date="1474367036073" expanded="true" signature="951:10214" ph="{...}" />
+                <marker date="1474367036073" expanded="true" signature="2144:2208" ph="/* openFileDialog_ExportSDSelect ... */" />
+                <marker date="1474367036073" expanded="true" signature="2298:2356" ph="/* dateTimePicker_TimeFrom ... */" />
+                <marker date="1474367036073" expanded="true" signature="2940:2996" ph="/* dateTimePicker_TimeTo ... */" />
+                <marker date="1474367036073" expanded="true" signature="3565:3614" ph="/* label_TimeFrom ... */" />
+                <marker date="1474367036073" expanded="true" signature="3984:4031" ph="/* label_TimeTo ... */" />
+                <marker date="1474367036073" expanded="true" signature="4391:4450" ph="/* textBox_FileExportSDName ... */" />
+                <marker date="1474367036073" expanded="true" signature="4825:4881" ph="/* button_ExportSDSelect ... */" />
+                <marker date="1474367036073" expanded="true" signature="5422:5479" ph="/* label_FileExportSDName ... */" />
+                <marker date="1474367036073" expanded="true" signature="5916:5968" ph="/* textBox_DebugInfo ... */" />
+                <marker date="1474367036073" expanded="true" signature="6604:6659" ph="/* button_parsingReport ... */" />
+                <marker date="1474367036073" expanded="true" signature="7196:7246" ph="/* button_SendMail ... */" />
+                <marker date="1474367036073" expanded="true" signature="7742:7794" ph="/* checkBox_ReportTO ... */" />
+                <marker date="1474367036073" expanded="true" signature="8323:8376" ph="/* checkBox_ReportRDU ... */" />
+                <marker date="1474367036073" expanded="true" signature="9042:9085" ph="/* MainForm ... */" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainForm.resx" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../../ReportMakerSD/MainForm.resx">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="384">
+              <caret line="78" column="29" selection-start-line="78" selection-start-column="29" selection-end-line="78" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="AUTO_COMMIT_ON_CHERRY_PICK" value="true" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="15" />
+    <option name="y" value="4" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="SolutionExplorer">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ReportMakerSD (1 project)" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ReportMakerSD" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ReportMakerSD (1 project)" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ReportMakerSD" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MainForm.cs" />
+              <option name="myItemType" value="com.jetbrains.resharper.projectView.solutionExplorer.SolutionExplorerNodeRider" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+        <option name="show-file-system" value="false" />
+        <option name="show-all-items" value="false" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+  </component>
+  <component name="RunManager" selected=".NET Project.Default">
+    <configuration default="true" type="DotNetProject" factoryName=".NET Project">
+      <option name="PROJECT_PATH" value="" />
+      <option name="PROJECT_KIND" value="None" />
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="USE_MONO" value="0" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="PROJECT_PATH" value="" />
+      <option name="PROJECT_KIND" value="None" />
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="USE_MONO" value="0" />
+      <envs />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue=".NET Project.Default" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0649ad1a-27e1-42a2-a502-649122af56d2" name="Default" comment="" />
+      <created>1477986966382</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1477986966382</updated>
+      <workItem from="1477986974239" duration="222000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="222000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="15" y="4" width="1400" height="1000" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Errors in solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32911393" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="UnitTesting" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Change Signature" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LIMIT_HISTORY" value="false" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../../ReportMakerSD/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1469543535859" expanded="true" signature="6:124" ph="..." />
+            <marker date="1469543535859" expanded="true" signature="149:507" ph="{...}" />
+            <marker date="1469543535859" expanded="true" signature="176:505" ph="{...}" />
+            <marker date="1469543535859" expanded="true" signature="191:275" ph="/// Главная точка входа для приложения. ... " />
+            <marker date="1469543535859" expanded="true" signature="322:499" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../ReportMakerSD/MainForm.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1475764038418" expanded="true" signature="6:269" ph="..." />
+            <marker date="1475764038418" expanded="true" signature="294:35826" ph="{...}" />
+            <marker date="1475764038418" expanded="true" signature="337:35824" ph="{...}" />
+            <marker date="1475764038418" expanded="true" signature="837:1150" ph="/* массив для отчетов. Для всех сразу. Позволит сначала выбрать все необходимые данные и далее отправив массив в  ... */" />
+            <marker date="1475764038418" expanded="true" signature="1244:8838" ph="{...}" />
+            <marker date="1475764038418" expanded="true" signature="2997:3105" ph="/* if (fileSI.Extension == &quot;.xls&quot; | fileSI.Extension == &quot;.xlsx&quot;)//добавить нужные форматы ... */" />
+            <marker date="1475764038418" expanded="true" signature="5327:5664" ph="/* Указатели обязательных полей на №столбцов в исходных данных ... */" />
+            <marker date="1475764038418" expanded="true" signature="6745:6984" ph="/* Наименование филиала (замена nameODU &amp;etc), строки (замена rowNumberODU&amp;etc), счетчик (замена countODU &amp;etc) ... */" />
+            <marker date="1475764038418" expanded="true" signature="8941:9263" ph="{...}" />
+            <marker date="1475764038418" expanded="true" signature="9019:9212" ph="/* textBox_DebugInfo.SelectionStart = textBox_DebugInfo.Text.Length; ... */" />
+            <marker date="1475764038418" expanded="true" signature="9405:9426" ph="{...}" />
+            <marker date="1475764038418" expanded="true" signature="9512:9624" ph="/* Загрузка данных из файла. ... */" />
+            <marker date="1475764038418" expanded="true" signature="9624:12793" ph="{...}" />
+            <marker date="1475764038418" expanded="true" signature="10160:10398" ph="/* FileName = &quot;D:\\0\\export.xlsx&quot;; ... */" />
+            <marker date="1475764038418" expanded="true" signature="10720:10883" ph="/* Ranges openRange = null; ... */" />
+            <marker date="1475764038418" expanded="true" signature="11582:12013" ph="/* Подготовка к убийству процесса Excel ... */" />
+            <marker date="1475764038418" expanded="true" signature="12635:12740" ph="/* Убийство процесса Excel ... */" />
+            <marker date="1475764038418" expanded="true" signature="12964:18471" ph="{...}" />
+            <marker date="1475764038418" expanded="true" signature="13862:13932" ph="/* Ширина колонок ... */" />
+            <marker date="1475764038418" expanded="true" signature="15707:15777" ph="/* Форматирование ... */" />
+            <marker date="1475764038418" expanded="true" signature="16649:16922" ph="/* openbook.Sheets[i].Range[openbook.Sheets[i].cells[r, 1], openbook.Sheets[i].cells[r, NumberCol]].HorizontalAli ... */" />
+            <marker date="1475764038418" expanded="true" signature="17829:17959" ph="/* oExcelApp.Interactive = true; ... */" />
+            <marker date="1475764038418" expanded="true" signature="18612:19233" ph="{...}" />
+            <marker date="1475764038418" expanded="true" signature="18906:19162" ph="/* ? Properties.Settings.Default.FolderWithExportSdDefault = openFile.FileName; ... */" />
+            <marker date="1475764038418" expanded="true" signature="19314:19369" ph="/* Отправка писем с отчетами. ... */" />
+            <marker date="1475764038418" expanded="true" signature="19369:22980" ph="{...}" />
+            <marker date="1475764038418" expanded="true" signature="19392:22969" ph="/* string usersODU = &quot;kava@odusz.so-ups.ru; adv@odusz.so-ups.ru; nikolaev@odusz.so-ups.ru; smirnov@odusz.so-ups.r ... */" />
+            <marker date="1475764038418" expanded="true" signature="23082:35818" ph="{...}" />
+            <marker date="1475764038418" expanded="true" signature="25043:25380" ph="/* Формируем отчет по подрядным организациям ... */" />
+            <marker date="1475764038418" expanded="true" signature="29749:29832" ph="/* временно ... */" />
+            <marker date="1475764038418" expanded="true" signature="29890:30224" ph="/* Формируем отчет: &quot;Нерешенные обращения по РДУ за период&quot;. ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../ReportMakerSD/MainForm.Designer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1474367036073" expanded="true" signature="23:11119" ph="{...}" />
+            <marker date="1474367036073" expanded="true" signature="52:11117" ph="{...}" />
+            <marker date="1474367036073" expanded="true" signature="67:153" ph="/// Обязательная переменная конструктора. ... " />
+            <marker date="1474367036073" expanded="true" signature="231:426" ph="/// Освободить все используемые ресурсы. ... " />
+            <marker date="1474367036073" expanded="true" signature="482:656" ph="{...}" />
+            <marker date="1474367036073" expanded="true" signature="666:10234" ph="Код, автоматически созданный конструктором форм Windows" />
+            <marker date="1474367036073" expanded="true" signature="739:908" ph="/// Требуемый метод для поддержки конструктора — не изменяйте  ... " />
+            <marker date="1474367036073" expanded="true" signature="951:10214" ph="{...}" />
+            <marker date="1474367036073" expanded="true" signature="2144:2208" ph="/* openFileDialog_ExportSDSelect ... */" />
+            <marker date="1474367036073" expanded="true" signature="2298:2356" ph="/* dateTimePicker_TimeFrom ... */" />
+            <marker date="1474367036073" expanded="true" signature="2940:2996" ph="/* dateTimePicker_TimeTo ... */" />
+            <marker date="1474367036073" expanded="true" signature="3565:3614" ph="/* label_TimeFrom ... */" />
+            <marker date="1474367036073" expanded="true" signature="3984:4031" ph="/* label_TimeTo ... */" />
+            <marker date="1474367036073" expanded="true" signature="4391:4450" ph="/* textBox_FileExportSDName ... */" />
+            <marker date="1474367036073" expanded="true" signature="4825:4881" ph="/* button_ExportSDSelect ... */" />
+            <marker date="1474367036073" expanded="true" signature="5422:5479" ph="/* label_FileExportSDName ... */" />
+            <marker date="1474367036073" expanded="true" signature="5916:5968" ph="/* textBox_DebugInfo ... */" />
+            <marker date="1474367036073" expanded="true" signature="6604:6659" ph="/* button_parsingReport ... */" />
+            <marker date="1474367036073" expanded="true" signature="7196:7246" ph="/* button_SendMail ... */" />
+            <marker date="1474367036073" expanded="true" signature="7742:7794" ph="/* checkBox_ReportTO ... */" />
+            <marker date="1474367036073" expanded="true" signature="8323:8376" ph="/* checkBox_ReportRDU ... */" />
+            <marker date="1474367036073" expanded="true" signature="9042:9085" ph="/* MainForm ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../ReportMakerSD/MainForm.resx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="78" column="29" selection-start-line="78" selection-start-column="29" selection-end-line="78" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

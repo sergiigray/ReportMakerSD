@@ -9,19 +9,16 @@
       <Value Profile="(Default)">ОДУ Северо-Запада:Архангельское РДУ:Балтийское РДУ:Карельское РДУ:Кольское РДУ:Коми РДУ:Ленинградское РДУ:Новгородское РДУ</Value>
     </Setting>
     <Setting Name="FGPNames" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Администраторы справочников Сервис Деск:АСДОУ:АСДУ - Заявки и ремонты:АСДУ - локальные системы:АСДУ - ОИК:АСДУ - телемеханика:АСДУ - технологические системы:Базовая поддержка пользователей:Дежурные специалисты ИТ:Информационная безопасность:Каналы связи:Поддержка аппаратных платформ:Порталы и информационно-справочные системы:Прочие:Руководство ИТ:Сервис Деск:Сети передачи данных:Системное администрирование:Телефония, конференцсвязь:Финансово-экономическая деятельность</Value>
+      <Value Profile="(Default)">Администраторы справочников Сервис Деск:АСДОУ:АСДУ - заявки и ремонты:АСДУ - локальные системы:АСДУ - ОИК:АСДУ - достоверизация ТМ:АСДУ - телемеханика:АСДУ - технологические системы:Базовая поддержка пользователей:Дежурные специалисты блока ИТ:Информационная безопасность:Каналы связи:Поддержка аппаратных платформ:Порталы и информационно-справочные системы:Прочие:Руководство ИТ:Сервис Деск:Сети передачи данных:Системное администрирование:Телефония, конференцсвязь:Финансово-экономическая деятельность</Value>
     </Setting>
     <Setting Name="WayOfGivingTreatments" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Документооборот:По почте:Другое:Личное обращение:По телефону:Интернет портал:Консоль самообслуживания:Прямой ввод:Событие системы мониторинга</Value>
+      <Value Profile="(Default)">Другое:Документооборот:Эл. почта:Личное обращение:По телефону:Интернет портал:Личный кабинет:Прямой ввод:Событие системы мониторинга</Value>
     </Setting>
     <Setting Name="ColumnsFilterNames" Type="System.String" Scope="User">
-      <Value Profile="(Default)">Остальные колонки:Дата окончания регистрации:Номер:Статус:Организация заявителя:Заявитель:ФГП:Исполнитель:Услуга:Тема:Дата и время решения:Решение:Способ подачи обращения</Value>
+      <Value Profile="(Default)">Остальные колонки:Дата окончания регистрации:Номер:Статус:Организация заявителя:Заявитель:ФГП:Исполнитель:Услуга:Тема:Дата и время решения:Решение (для списков):Способ подачи обращения</Value>
     </Setting>
     <Setting Name="StatusesNames" Type="System.String" Scope="User">
       <Value Profile="(Default)">4 В ожидании:3 Выполняется:2 Назначен:1 Новый</Value>
-    </Setting>
-    <Setting Name="ParsingStatus" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">True</Value>
     </Setting>
     <Setting Name="ProjectName" Type="System.String" Scope="Application">
       <Value Profile="(Default)">ReportMakerSD</Value>
@@ -30,22 +27,49 @@
       <Value Profile="(Default)">8</Value>
     </Setting>
     <Setting Name="TimeToHour" Type="System.Int32" Scope="User">
-      <Value Profile="(Default)">16</Value>
+      <Value Profile="(Default)">17</Value>
     </Setting>
     <Setting Name="TimeFromMinute" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">30</Value>
     </Setting>
     <Setting Name="TimeToMinute" Type="System.Int32" Scope="User">
-      <Value Profile="(Default)">15</Value>
-    </Setting>
-    <Setting Name="ReportTO" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">True</Value>
+      <Value Profile="(Default)">30</Value>
     </Setting>
     <Setting Name="TO" Type="System.String" Scope="User">
       <Value Profile="(Default)">ТО \\</Value>
     </Setting>
-    <Setting Name="ReportRDU" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">True</Value>
+    <Setting Name="Report_based_SheetsName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Зарегистрированные обращения:График:ФГП:ФГП2:По источнику оповещения</Value>
+    </Setting>
+    <Setting Name="ReportODU_MailCopy" Type="System.String" Scope="User">
+      <Value Profile="(Default)">info_sd@odusz.so-ups.ru; blinov-al@odusz.so-ups.ru; alpatskiy-an@odusz.so-ups.ru; stis@odusz.so-ups.ru; nasonov@odusz.so-ups.ru; tihonov_r@odusz.so-ups.ru</Value>
+    </Setting>
+    <Setting Name="ReportRDU_MailTO" Type="System.String" Scope="User">
+      <Value Profile="(Default)">vif@arhrdu.so-ups.ru; glebov@balticrdu.so-ups.ru; shlyakov@karelia.so-ups.ru; iklouzay@kola.so-ups.ru; potoskuev@komirdu.so-ups.ru; msa@lenrdu.so-ups.ru; povyshevvi@novrdu.so-ups.ru; maltsev@odusz.so-ups.ru</Value>
+    </Setting>
+    <Setting Name="ReportRDU_MailCopy" Type="System.String" Scope="User">
+      <Value Profile="(Default)">maksim@odusz.so-ups.ru; info_sd@odusz.so-ups.ru; alpatskiy-an@odusz.so-ups.ru; stis@odusz.so-ups.ru; nasonov@odusz.so-ups.ru; tihonov_r@odusz.so-ups.ru</Value>
+    </Setting>
+    <Setting Name="ReportTO_MailTO" Type="System.String" Scope="User">
+      <Value Profile="(Default)">kava@odusz.so-ups.ru; nikolaev@odusz.so-ups.ru; smirnov@odusz.so-ups.ru; makarov@odusz.so-ups.ru; hicom@odusz.so-ups.ru; maksim@odusz.so-ups.ru; chulkov@odusz.so-ups.ru; maltsev@odusz.so-ups.ru; vif@arhrdu.so-ups.ru; glebov@balticrdu.so-ups.ru; shlyakov@karelia.so-ups.ru; iklouzay@kola.so-ups.ru; potoskuev@komirdu.so-ups.ru; msa@lenrdu.so-ups.ru; sazonov-ig@odusz.so-ups.ru; PovyshevVI@novrdu.so-ups.ru; alyabiev-nv@odusz.so-ups.ru 
+
+
+</Value>
+    </Setting>
+    <Setting Name="ReportTO_MailCopy" Type="System.String" Scope="User">
+      <Value Profile="(Default)">lopintsev@odusz.so-ups.ru; pyatnitskiy-ev@odusz.so-ups.ru; blinov-al@odusz.so-ups.ru; info_sd@odusz.so-ups.ru; tihonov_r@odusz.so-ups.ru</Value>
+    </Setting>
+    <Setting Name="Report_SD" Type="System.String" Scope="User">
+      <Value Profile="(Default)">info_sd@odusz.so-ups.ru;</Value>
+    </Setting>
+    <Setting Name="ReportODU_MailTO" Type="System.String" Scope="User">
+      <Value Profile="(Default)">kava@odusz.so-ups.ru; adv@odusz.so-ups.ru; nikolaev@odusz.so-ups.ru; smirnov@odusz.so-ups.ru; makarov@odusz.so-ups.ru; hicom@odusz.so-ups.ru; maksim@odusz.so-ups.ru; chulkov@odusz.so-ups.ru; maltsev@odusz.so-ups.ru; sazonov-ig@odusz.so-ups.ru </Value>
+    </Setting>
+    <Setting Name="InstallPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\\srv-fss-oducz\SOE_ASU-SD\ТРСОО\ReportMakerSD\</Value>
+    </Setting>
+    <Setting Name="ColumnsFilterNamesRDU" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Остальные колонки:Дата окончания регистрации:Номер:Статус:Организация заявителя:Заявитель:ФГП:Исполнитель:Услуга:Тема:Описание (для списков):Код ожидания:Причина ожидания:Дата и время решения:Решение (для списков):Способ подачи обращения</Value>
     </Setting>
   </Settings>
 </SettingsFile>

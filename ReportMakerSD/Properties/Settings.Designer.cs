@@ -12,7 +12,7 @@ namespace ReportMakerSD.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "14.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.2.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -50,7 +50,7 @@ namespace ReportMakerSD.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute(@"Администраторы справочников Сервис Деск:АСДОУ:АСДУ - Заявки и ремонты:АСДУ - локальные системы:АСДУ - ОИК:АСДУ - телемеханика:АСДУ - технологические системы:Базовая поддержка пользователей:Дежурные специалисты ИТ:Информационная безопасность:Каналы связи:Поддержка аппаратных платформ:Порталы и информационно-справочные системы:Прочие:Руководство ИТ:Сервис Деск:Сети передачи данных:Системное администрирование:Телефония, конференцсвязь:Финансово-экономическая деятельность")]
+        [global::System.Configuration.DefaultSettingValueAttribute(@"Администраторы справочников Сервис Деск:АСДОУ:АСДУ - заявки и ремонты:АСДУ - локальные системы:АСДУ - ОИК:АСДУ - достоверизация ТМ:АСДУ - телемеханика:АСДУ - технологические системы:Базовая поддержка пользователей:Дежурные специалисты блока ИТ:Информационная безопасность:Каналы связи:Поддержка аппаратных платформ:Порталы и информационно-справочные системы:Прочие:Руководство ИТ:Сервис Деск:Сети передачи данных:Системное администрирование:Телефония, конференцсвязь:Финансово-экономическая деятельность")]
         public string FGPNames {
             get {
                 return ((string)(this["FGPNames"]));
@@ -62,8 +62,8 @@ namespace ReportMakerSD.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Документооборот:По почте:Другое:Личное обращение:По телефону:Интернет портал:Конс" +
-            "оль самообслуживания:Прямой ввод:Событие системы мониторинга")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Другое:Документооборот:Эл. почта:Личное обращение:По телефону:Интернет портал:Лич" +
+            "ный кабинет:Прямой ввод:Событие системы мониторинга")]
         public string WayOfGivingTreatments {
             get {
                 return ((string)(this["WayOfGivingTreatments"]));
@@ -76,8 +76,8 @@ namespace ReportMakerSD.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("Остальные колонки:Дата окончания регистрации:Номер:Статус:Организация заявителя:З" +
-            "аявитель:ФГП:Исполнитель:Услуга:Тема:Дата и время решения:Решение:Способ подачи " +
-            "обращения")]
+            "аявитель:ФГП:Исполнитель:Услуга:Тема:Дата и время решения:Решение (для списков):" +
+            "Способ подачи обращения")]
         public string ColumnsFilterNames {
             get {
                 return ((string)(this["ColumnsFilterNames"]));
@@ -96,18 +96,6 @@ namespace ReportMakerSD.Properties {
             }
             set {
                 this["StatusesNames"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool ParsingStatus {
-            get {
-                return ((bool)(this["ParsingStatus"]));
-            }
-            set {
-                this["ParsingStatus"] = value;
             }
         }
         
@@ -134,7 +122,7 @@ namespace ReportMakerSD.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("16")]
+        [global::System.Configuration.DefaultSettingValueAttribute("17")]
         public int TimeToHour {
             get {
                 return ((int)(this["TimeToHour"]));
@@ -158,25 +146,13 @@ namespace ReportMakerSD.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("15")]
+        [global::System.Configuration.DefaultSettingValueAttribute("30")]
         public int TimeToMinute {
             get {
                 return ((int)(this["TimeToMinute"]));
             }
             set {
                 this["TimeToMinute"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool ReportTO {
-            get {
-                return ((bool)(this["ReportTO"]));
-            }
-            set {
-                this["ReportTO"] = value;
             }
         }
         
@@ -194,13 +170,134 @@ namespace ReportMakerSD.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("True")]
-        public bool ReportRDU {
+        [global::System.Configuration.DefaultSettingValueAttribute("Зарегистрированные обращения:График:ФГП:ФГП2:По источнику оповещения")]
+        public string Report_based_SheetsName {
             get {
-                return ((bool)(this["ReportRDU"]));
+                return ((string)(this["Report_based_SheetsName"]));
             }
             set {
-                this["ReportRDU"] = value;
+                this["Report_based_SheetsName"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("info_sd@odusz.so-ups.ru; blinov-al@odusz.so-ups.ru; alpatskiy-an@odusz.so-ups.ru;" +
+            " stis@odusz.so-ups.ru; nasonov@odusz.so-ups.ru; tihonov_r@odusz.so-ups.ru")]
+        public string ReportODU_MailCopy {
+            get {
+                return ((string)(this["ReportODU_MailCopy"]));
+            }
+            set {
+                this["ReportODU_MailCopy"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("vif@arhrdu.so-ups.ru; glebov@balticrdu.so-ups.ru; shlyakov@karelia.so-ups.ru; ikl" +
+            "ouzay@kola.so-ups.ru; potoskuev@komirdu.so-ups.ru; msa@lenrdu.so-ups.ru; povyshe" +
+            "vvi@novrdu.so-ups.ru; maltsev@odusz.so-ups.ru")]
+        public string ReportRDU_MailTO {
+            get {
+                return ((string)(this["ReportRDU_MailTO"]));
+            }
+            set {
+                this["ReportRDU_MailTO"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("maksim@odusz.so-ups.ru; info_sd@odusz.so-ups.ru; alpatskiy-an@odusz.so-ups.ru; st" +
+            "is@odusz.so-ups.ru; nasonov@odusz.so-ups.ru; tihonov_r@odusz.so-ups.ru")]
+        public string ReportRDU_MailCopy {
+            get {
+                return ((string)(this["ReportRDU_MailCopy"]));
+            }
+            set {
+                this["ReportRDU_MailCopy"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute(@"kava@odusz.so-ups.ru; nikolaev@odusz.so-ups.ru; smirnov@odusz.so-ups.ru; makarov@odusz.so-ups.ru; hicom@odusz.so-ups.ru; maksim@odusz.so-ups.ru; chulkov@odusz.so-ups.ru; maltsev@odusz.so-ups.ru; vif@arhrdu.so-ups.ru; glebov@balticrdu.so-ups.ru; shlyakov@karelia.so-ups.ru; iklouzay@kola.so-ups.ru; potoskuev@komirdu.so-ups.ru; msa@lenrdu.so-ups.ru; sazonov-ig@odusz.so-ups.ru; PovyshevVI@novrdu.so-ups.ru; alyabiev-nv@odusz.so-ups.ru 
+
+
+")]
+        public string ReportTO_MailTO {
+            get {
+                return ((string)(this["ReportTO_MailTO"]));
+            }
+            set {
+                this["ReportTO_MailTO"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("lopintsev@odusz.so-ups.ru; pyatnitskiy-ev@odusz.so-ups.ru; blinov-al@odusz.so-ups" +
+            ".ru; info_sd@odusz.so-ups.ru; tihonov_r@odusz.so-ups.ru")]
+        public string ReportTO_MailCopy {
+            get {
+                return ((string)(this["ReportTO_MailCopy"]));
+            }
+            set {
+                this["ReportTO_MailCopy"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("info_sd@odusz.so-ups.ru;")]
+        public string Report_SD {
+            get {
+                return ((string)(this["Report_SD"]));
+            }
+            set {
+                this["Report_SD"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("kava@odusz.so-ups.ru; adv@odusz.so-ups.ru; nikolaev@odusz.so-ups.ru; smirnov@odus" +
+            "z.so-ups.ru; makarov@odusz.so-ups.ru; hicom@odusz.so-ups.ru; maksim@odusz.so-ups" +
+            ".ru; chulkov@odusz.so-ups.ru; maltsev@odusz.so-ups.ru; sazonov-ig@odusz.so-ups.r" +
+            "u ")]
+        public string ReportODU_MailTO {
+            get {
+                return ((string)(this["ReportODU_MailTO"]));
+            }
+            set {
+                this["ReportODU_MailTO"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("\\\\srv-fss-oducz\\SOE_ASU-SD\\ТРСОО\\ReportMakerSD\\")]
+        public string InstallPath {
+            get {
+                return ((string)(this["InstallPath"]));
+            }
+            set {
+                this["InstallPath"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("Остальные колонки:Дата окончания регистрации:Номер:Статус:Организация заявителя:З" +
+            "аявитель:ФГП:Исполнитель:Услуга:Тема:Описание (для списков):Код ожидания:Причина" +
+            " ожидания:Дата и время решения:Решение (для списков):Способ подачи обращения")]
+        public string ColumnsFilterNamesRDU {
+            get {
+                return ((string)(this["ColumnsFilterNamesRDU"]));
+            }
+            set {
+                this["ColumnsFilterNamesRDU"] = value;
             }
         }
     }

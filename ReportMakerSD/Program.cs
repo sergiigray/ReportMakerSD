@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ReportMakerSD
@@ -12,11 +9,19 @@ namespace ReportMakerSD
         /// Главная точка входа для приложения.
         /// </summary>
         [STAThread]
-        static void Main()
+        static int Main(string[] args)
         {
+            Console.WriteLine("Командная строка содержит " + args.Length + " агрумента.");
+            Console.WriteLine("Вот они: ");
+            for (int i = 0; i < args.Length; i++)
+            {
+                Console.WriteLine(args[i]);
+            }
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new MainForm());
+            return 0;
         }
     }
 }
