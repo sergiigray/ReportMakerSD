@@ -577,11 +577,13 @@ namespace ReportMakerSD
                         DateTime.Now.AddDays(-(Convert.ToInt16(DateTime.Now.DayOfWeek)) + 1).Year,
                         DateTime.Now.AddDays(-(Convert.ToInt16(DateTime.Now.DayOfWeek)) + 1).Month,
                         DateTime.Now.AddDays(-(Convert.ToInt16(DateTime.Now.DayOfWeek)) + 1).Day,
-                        Properties.Settings.Default.TimeFromHour, Properties.Settings.Default.TimeFromMinute, 0);
+                        //Properties.Settings.Default.TimeFromHour, Properties.Settings.Default.TimeFromMinute, 0);
+                        0, 0, 0);
                     switch (DateTime.Now.DayOfWeek)
                     {
                         case DayOfWeek.Monday:
-                            dateTimePicker_TimeFrom.Value = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, Properties.Settings.Default.TimeFromHour - 1, Properties.Settings.Default.TimeFromMinute - 1, 0);
+                            dateTimePicker_TimeFrom.Value = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, 
+                                Properties.Settings.Default.TimeFromHour - 1, Properties.Settings.Default.TimeFromMinute - 1, 0);
                             break;
                         case DayOfWeek.Friday:
                             //dateTimePicker_TimeFrom.Value = new DateTime(DateTime.Now.Year, DateTime.Now.Month, DateTime.Now.Day, Properties.Settings.Default.TimeFromHour - 1, Properties.Settings.Default.TimeFromMinute - 1, 0);
@@ -592,7 +594,8 @@ namespace ReportMakerSD
                                 DateTime.Now.AddDays(-(Convert.ToInt16(DateTime.Now.DayOfWeek)) + 1).Year,
                                 DateTime.Now.AddDays(-(Convert.ToInt16(DateTime.Now.DayOfWeek)) + 1).Month,
                                 DateTime.Now.AddDays(-(Convert.ToInt16(DateTime.Now.DayOfWeek)) + 1).Day,
-                                Properties.Settings.Default.TimeFromHour, Properties.Settings.Default.TimeFromMinute, 0);
+                                //Properties.Settings.Default.TimeFromHour, Properties.Settings.Default.TimeFromMinute, 0);
+                                0, 0, 0);
                             break;
                     }
                     break;
