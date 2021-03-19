@@ -1,4 +1,5 @@
-﻿using System.IO;
+﻿using System;
+using System.IO;
 
 namespace ReportMakerSD
 {
@@ -38,7 +39,6 @@ namespace ReportMakerSD
             }
             return fi;
         }
-
         internal static DirectoryInfo GetDirectoryInfo(string directory)
         {
             var di = new DirectoryInfo(_outputDir.FullName + Path.DirectorySeparatorChar + directory);

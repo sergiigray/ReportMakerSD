@@ -18,7 +18,7 @@ namespace ReportMakerSD
 
             //var SDR0Data0Sorted = MainForm.SDR0Data0.OrderByDescending(x => x.DateEndReg).ToList();
             //var SDR0Data0Sorted = MainForm.SDR0Data0.Where(p => p.OAreaFSG == "ОЗ ОДУ Северо-Запада").OrderByDescending(x => x.DateEndReg).ToList();
-            var SDR0Data0Sorted = from UserRequest in MainForm.SDR0Data0
+            var SDR0Data0Sorted = from UserRequest in Form0.SDR0Data0
                                   where UserRequest.OAreaFSG == "ОЗ ОДУ Северо-Запада"
                                   where (UserRequest.Status == "2 Назначен" || UserRequest.Status == "3 Выполняется" || UserRequest.Status == "4 В ожидании")
                                   orderby UserRequest.DateEndReg descending
@@ -44,7 +44,7 @@ namespace ReportMakerSD
                         wrksheet.Cells[1, countColumns + 1].Value = ColumnsReport;
                         if (ColumnsReport.IndexOf("Просро") >= 0)
                         {
-                            wrksheet.Cells[1, countColumns + 1].Value = wrksheet.Cells[1, countColumns + 1].Value + " по состоянию на " + MainForm.SDR0Data;
+                            wrksheet.Cells[1, countColumns + 1].Value = wrksheet.Cells[1, countColumns + 1].Value + " по состоянию на " + Form0.SDR0Data;
                         }
                         countColumns++;
 

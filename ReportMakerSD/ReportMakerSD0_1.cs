@@ -9,28 +9,31 @@ namespace ReportMakerSD
 {
     public static partial class SDR0
     {
+        // Отчет по филиалам ОЗ ОДУ Северо-запада
+        // Обращения только в ответственности ФГП ОДУ СЗ
         //public static string RunReportOne(string PathToFileExportSD, string FilePath, DateTime dateTimeTo)
-        public static string RunReportOne(DateTime dateTimeTo)
+        public static string RunReportOne(DateTime dateTimeTo, DateTime DateTimeNowWeek)
         {
             //Utils.OutputDir = new DirectoryInfo(PathToFileExportSD);
             //FileInfo existingFile = new FileInfo(FilePath);
 
-            List<string> ColumnsReport0 = new List<string>() { "Дата окончания регистрации", "Номер", "Статус", "Организация заявителя", "Заявитель", "ФГП", "Исполнитель", "Услуга", "Тема", "Описание (для списков)", "Код ожидания", "Причина ожидания", "Срок ожидания", "Расчетная дата решения обращения", "Просрочен на (выполнение)" };
+            List<string> ColumnsReport0 = new List<string>() { "Дата окончания регистрации", "Номер", "Статус", "Организация заявителя", "Заявитель", "ФГП", "Исполнитель", "Услуга", "Тема", "Описание (для списков)", "Код ожидания", "Причина ожидания", "Срок ожидания", "Расчетная дата решения обращения (для Заявителя)", "Просрочен на (выполнение)" };
 
             //List<SDRData> SDR0Data0 = new List<SDRData>();
             //SDR0Data0 = SDRData.SDRLoadData(PathToFileExportSD, FilePath); // Получили все данные из файла
 
             // Сортируем по организации заявителя
-            var SDR0Data0Sorted = MainForm.SDR0Data0.OrderBy(x => x.Org).ToList();
+            var SDR0Data0Sorted = Form0.SDR0Data0.OrderBy(x => x.Org).ToList();
 
             //Формируем отчетный файл
             using (var package = new ExcelPackage())
             {
                 // Add a new worksheet to the empty workbook
                 ExcelWorksheet worksheet1 = package.Workbook.Worksheets.Add("Просрочка");
-                ExcelWorksheet worksheet2 = package.Workbook.Worksheets.Add("На неделе");
-                ExcelWorksheet worksheet3 = package.Workbook.Worksheets.Add("Длительные");
+                ExcelWorksheet worksheet2 = package.Workbook.Worksheets.Add("На текущей неделе");
+                ExcelWorksheet worksheet3 = package.Workbook.Worksheets.Add("Остальные");
 
+                #region Шапка
                 // Добавляем шапку на лист1
                 int countColumns = 0;
                 foreach (string ColumnsReport in ColumnsReport0)
@@ -38,7 +41,7 @@ namespace ReportMakerSD
                     worksheet1.Cells[1, countColumns + 1].Value = ColumnsReport;
                     if (ColumnsReport.IndexOf("Просро") >= 0)
                     {
-                        worksheet1.Cells[1, countColumns + 1].Value = worksheet1.Cells[1, countColumns + 1].Value + " по состоянию на " + MainForm.SDR0Data;
+                        worksheet1.Cells[1, countColumns + 1].Value = worksheet1.Cells[1, countColumns + 1].Value + " по состоянию на " + Form0.SDR0Data;
                     }
                     countColumns++;
                 }
@@ -49,7 +52,7 @@ namespace ReportMakerSD
                     worksheet2.Cells[1, countColumns + 1].Value = ColumnsReport;
                     if (ColumnsReport.IndexOf("Просро") >= 0)
                     {
-                        worksheet2.Cells[1, countColumns + 1].Value = worksheet2.Cells[1, countColumns + 1].Value + " по состоянию на " + MainForm.SDR0Data;
+                        worksheet2.Cells[1, countColumns + 1].Value = worksheet2.Cells[1, countColumns + 1].Value + " по состоянию на " + Form0.SDR0Data;
                     }
                     countColumns++;
                 }
@@ -60,24 +63,25 @@ namespace ReportMakerSD
                     worksheet3.Cells[1, countColumns + 1].Value = ColumnsReport;
                     if (ColumnsReport.IndexOf("Просро") >= 0)
                     {
-                        worksheet3.Cells[1, countColumns + 1].Value = worksheet3.Cells[1, countColumns + 1].Value + " по состоянию на " + MainForm.SDR0Data; //existingFile.Name.Substring(8, 16);
+                        worksheet3.Cells[1, countColumns + 1].Value = worksheet3.Cells[1, countColumns + 1].Value + " по состоянию на " + Form0.SDR0Data; //existingFile.Name.Substring(8, 16);
                     }
                     countColumns++;
                 }
+                #endregion
 
                 // Добавляем данные
                 int count1 = 0, count2 = 0, count3 = 0;
-                DateTime dtDateTimeWeek = dateTimeTo.AddDays(7);
 
                 foreach (var row in SDR0Data0Sorted)
                 {
-                    if ((row.FSG.IndexOf("ТО \\") == -1) && (row.Status == "2 Назначен" || row.Status == "3 Выполняется" || row.Status == "4 В ожидании"))
+                    if ((row.OAreaFSG.IndexOf("ОЗ ОДУ Северо-Запада") >= 0) && (row.Status == "2 Назначен" || row.Status == "3 Выполняется" || row.Status == "4 В ожидании"))
                     {
-                        if (row.DateCalc <= dateTimeTo)
+                        if ((row.DateCalc <= dateTimeTo) || (row.Expired != "0:00"))
                         {
                             worksheet1.Cells[2 + count1, 1].Value = row.DateEndReg;
                             worksheet1.Cells[2 + count1, 1].Style.Numberformat.Format = "dd/mm/yyyy hh:mm";
                             worksheet1.Cells[2 + count1, 2].Value = row.Number;
+                            worksheet1.Cells[2 + count1, 2].Style.Numberformat.Format = "0";
                             worksheet1.Cells[2 + count1, 3].Value = row.Status;
                             worksheet1.Cells[2 + count1, 4].Value = row.Org;
                             worksheet1.Cells[2 + count1, 5].Value = row.Applicant;
@@ -88,14 +92,15 @@ namespace ReportMakerSD
                             worksheet1.Cells[2 + count1, 10].Value = row.Description;
                             worksheet1.Cells[2 + count1, 11].Value = row.WaitingCode;
                             worksheet1.Cells[2 + count1, 12].Value = row.WaitingReason;
+                            worksheet1.Cells[2 + count1, 13].Value = row.DateWait;
+                            worksheet1.Cells[2 + count1, 13].Style.Numberformat.Format = "dd-MM-yyyy HH:mm";
                             worksheet1.Cells[2 + count1, 14].Value = row.DateCalc;
                             worksheet1.Cells[2 + count1, 14].Style.Numberformat.Format = "dd/mm/yyyy hh:mm";
-                            worksheet1.Cells[2 + count1, 13].Value = row.DateWait;
-                            worksheet1.Cells[2 + count1, 13].Style.Numberformat.Format = "dd/mm/yyyy hh:mm";
                             worksheet1.Cells[2 + count1, 15].Value = row.Expired;
                             count1++;
                         }
-                        else if (row.DateCalc <= dtDateTimeWeek)
+                        //else if ((row.DateCalc < DateTimeNowWeek) || (row.DateWait < DateTimeNowWeek && row.DateCalc == null))
+                        else if (row.DateCalc < DateTimeNowWeek)
                         {
                             worksheet2.Cells[2 + count2, 1].Value = row.DateEndReg;
                             worksheet2.Cells[2 + count2, 1].Style.Numberformat.Format = "dd/mm/yyyy hh:mm";

@@ -120,11 +120,41 @@
   <metadata name="openFileDialog_ExportSDSelect.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <metadata name="backgroundWorker.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>238, 17</value>
-  </metadata>
+  <data name="textBox_WeekMailTo.Text" xml:space="preserve">
+    <value>Алпацкий Александр Николаевич &lt;alpatskiy-an@odusz.so-ups.ru&gt;; Алябьев Николай Валерьевич &lt;alyabiev-nv@odusz.so-ups.ru&gt;; Анаприенко Роман Викторович &lt;anaprienko@lenrdu.so-ups.ru&gt;; Андреев Алексей Андреевич &lt;AndreevAA@novrdu.so-ups.ru&gt;; 
+Аниськин Александр Дмитриевич &lt;aniskin@lenrdu.so-ups.ru&gt;; Антонов Антон Сергеевич &lt;AntonovAS@novrdu.so-ups.ru&gt;; Антонов Владимир Сергеевич &lt;stis@odusz.so-ups.ru&gt;; Артемьев Дмитрий Владимирович &lt;adv@odusz.so-ups.ru&gt;; Ассиновский Кирилл Львович &lt;assinovskiy-kl@odusz.so-ups.ru&gt;; 
+Бабенко Виктор Николаевич &lt;babenkovn@balticrdu.so-ups.ru&gt;; Бабенко Сергей Николаевич &lt;babenkosn@balticrdu.so-ups.ru&gt;; Бевз Александр Викторович &lt;bevz@karelia.so-ups.ru&gt;; Беличенко Сергей Александрович &lt;hicom@odusz.so-ups.ru&gt;; 
+Белопухов Артём Витальевич &lt;belopuhovav@balticrdu.so-ups.ru&gt;; Блинов Андрей Леонидович &lt;blinov-al@odusz.so-ups.ru&gt;; Бойко Никита Анатольевич &lt;naboiko@kola.so-ups.ru&gt;; Бондарь Игорь Владимирович &lt;BondarIV@novrdu.so-ups.ru&gt;; Бубиль Сергей Анатольевич &lt;BubilSA@balticrdu.so-ups.ru&gt;; Быстров Алексей Александрович &lt;aabistrov@kola.so-ups.ru&gt;; 
+Васильев Александр Аркадьевич &lt;VasilievAA@novrdu.so-ups.ru&gt;; Васильев Игорь Феликсович &lt;vif@arhrdu.so-ups.ru&gt;; Волочаев Сергей Владимирович &lt;VolochaevSV@balticrdu.so-ups.ru&gt;; 
+Гладких Сергей Николаевич &lt;gladkih@komirdu.so-ups.ru&gt;; Глебов Андрей Александрович &lt;glebov@balticrdu.so-ups.ru&gt;; Голиков Иван Геннадьевич &lt;golikov@komirdu.so-ups.ru&gt;; Гоноболева Елена Владимировна &lt;gonoboleva@karelia.so-ups.ru&gt;; Гридин Александр Владимирович &lt;avgridin@kola.so-ups.ru&gt;; 
+Дементьева Марина Федоровна &lt;mary@odusz.so-ups.ru&gt;; Деремешко Андрей Юрьевич &lt;deremeshkoay@balticrdu.so-ups.ru&gt;; Дорошенко Елена Владиславовна &lt;doroshenko@odusz.so-ups.ru&gt;; Дьяков Николай Борисович &lt;dnb@arhrdu.so-ups.ru&gt;; 
+Еремеев Олег Владимирович &lt;eremeev@komirdu.so-ups.ru&gt;; Еремеева Елена Викторовна &lt;eremeeva@komirdu.so-ups.ru&gt;; 
+Жаворонков Александр Константинович &lt;akzhavoronkov@kola.so-ups.ru&gt;; 
+Ильин Владимир Алексеевич &lt;vailyin@kola.so-ups.ru&gt;; Ичетовкин Евгений Николаевич &lt;ichetovkin@komirdu.so-ups.ru&gt;
+Кавалеров Сергей Сергеевич &lt;kava@odusz.so-ups.ru&gt;; Каменев Алексей Юрьевич &lt;KamenevAY@novrdu.so-ups.ru&gt;; Климчев Константин Валерьевич &lt;klimchev-kv@arhrdu.so-ups.ru&gt;; Козлов Юрий Анатольевич &lt;kozlov@lenrdu.so-ups.ru&gt;; 
+Колесников Сергей Александрович &lt;kolesnikov-sa@lenrdu.so-ups.ru&gt;; Кондратьев Юрий Юрьевич &lt;uukondratyev@kola.so-ups.ru&gt;; Коршак Ирина Мусиевна &lt;irina@lenrdu.so-ups.ru&gt;; Кострикин Роман Дмитриевич &lt;kostrikin@lenrdu.so-ups.ru&gt;; Котов Александр Вячеславович &lt;kotov@karelia.so-ups.ru&gt;; Котов Алексей Вячеславович &lt;kotov_alexey@karelia.so-ups.ru&gt;; Кудрявцев Александр Евгеньевич &lt;kudryavtsevae@novrdu.so-ups.ru&gt;; Куценко Игорь Васильевич &lt;kutsenko-iv@odusz.so-ups.ru&gt;; 
+Лаврик Елена Леонидовна &lt;lavrik@odusz.so-ups.ru&gt;; Лопинцев Александр Владимирович &lt;lopintsev@odusz.so-ups.ru&gt;; Лузай Игорь Кириллович &lt;iklouzay@kola.so-ups.ru&gt;; Лузай Олег Кириллович &lt;oklouzay@kola.so-ups.ru&gt;; 
+Макаров Владимир Викторович &lt;makarov@odusz.so-ups.ru&gt;; Максим Андрей Николаевич &lt;maxim_a@odusz.so-ups.ru&gt;; Максим Сергей Николаевич &lt;maksim@odusz.so-ups.ru&gt;; Максимов Алексей Анатольевич &lt;maximov@komirdu.so-ups.ru&gt;; 
+Максимов Михаил Сергеевич &lt;maximov_m@komirdu.so-ups.ru&gt;; Мальцев Сергей Владимирович &lt;maltsev@odusz.so-ups.ru&gt;; Марченко Владимир Валерьевич &lt;vvmarchenko@kola.so-ups.ru&gt;; Мельничников Сергей Александрович &lt;msa@lenrdu.so-ups.ru&gt;; Морозов Алексей Анатольевич &lt;morozov@komirdu.so-ups.ru&gt;; Муравицкий Алексей Николаевич &lt;muravickiyan@novrdu.so-ups.ru&gt;; 
+Никитин Дмитрий Владимирович &lt;nikodim@lenrdu.so-ups.ru&gt;; Николаев Александр Анатольевич &lt;Nikolaev-aa@karelia.so-ups.ru&gt;; Николаев Дмитрий Александрович &lt;nikolaev@odusz.so-ups.ru&gt;; Новик Антон Игоревич &lt;novik-ai@odusz.so-ups.ru&gt;; 
+Павлов Вячеслав Владимирович &lt;PavlovVV@novrdu.so-ups.ru&gt;; Павлова Наталья Анатольевна &lt;pavlova@lenrdu.so-ups.ru&gt;; Пак Виктория Анатольевна &lt;pakva@balticrdu.so-ups.ru&gt;; Пасецкий Юрий Владимирович &lt;pasetckiyuv@balticrdu.so-ups.ru&gt;; 
+Пиличев Владимир Николаевич &lt;pvn@arhrdu.so-ups.ru&gt;; Пирогов Александр Юрьевич &lt;cross@odusz.so-ups.ru&gt;; Повышев Владимир Игоревич &lt;PovyshevVI@novrdu.so-ups.ru&gt;; 
+Пономарев Михаил Сергеевич &lt;ponomarev@karelia.so-ups.ru&gt;; Попов Александр Афанасьевич &lt;aap@arhrdu.so-ups.ru&gt;; Поташов Николай Александрович &lt;potashov@karelia.so-ups.ru&gt;; Потоскуев Григорий Эрвинович &lt;potoskuev@komirdu.so-ups.ru&gt;; 
+Потоскуев Иван Григорьевич &lt;potoskuev_ig@komirdu.so-ups.ru&gt;; Протасов Максим Александрович &lt;protasov-ma@karelia.so-ups.ru&gt;; Пунегов Дмитрий Васильевич &lt;punegov@komirdu.so-ups.ru&gt;; Пуолокайнен Матвей Михайлович &lt;puolokaynen@karelia.so-ups.ru&gt;; 
+Решетова Мария Александровна &lt;mareshetova@kola.so-ups.ru&gt;; Романов Сергей Петрович &lt;romanov-sp@odusz.so-ups.ru&gt;; 
+Саблин Александр Анатольевич &lt;aasablin@kola.so-ups.ru&gt;; Сазонов Илья Геннадьевич &lt;sazonov-ig@odusz.so-ups.ru&gt;; Сасунов Хануко Хананилович &lt;sasunovhh@balticrdu.so-ups.ru&gt;; Славин Юрий Валерьевич &lt;SlavinYV@novrdu.so-ups.ru&gt;; 
+Смирнов Алексей Анатольевич &lt;smirnov@odusz.so-ups.ru&gt;; Соколов Александр Николаевич &lt;sokolovan@komirdu.so-ups.ru&gt;; Соколов Василий Александрович &lt;sokolovv@komirdu.so-ups.ru&gt;; Софронов Андрей Николаевич &lt;sofronov@karelia.so-ups.ru&gt;; 
+Станишевский Сергей Петрович &lt;sps@odusz.so-ups.ru&gt;; Старостин Дмитрий Валерьевич &lt;stardw@odusz.so-ups.ru&gt;; Сухотин Василий Иннокентьевич &lt;suhotin@odusz.so-ups.ru&gt;; Сычев Артур Сергеевич &lt;SychovAS@balticrdu.so-ups.ru&gt;; 
+Тараканова Елена Алексеевна &lt;tarakanova@odusz.so-ups.ru&gt;; Тимофеев Андрей Валентинович &lt;avtimofeev@kola.so-ups.ru&gt;; Титов Алексей Витальевич &lt;titov-av@odusz.so-ups.ru&gt;; Тихонов Дмитрий Алексеевич &lt;datikhonov@kola.so-ups.ru&gt;; 
+Томов Олег Алексеевич &lt;tomov@komirdu.so-ups.ru&gt;; Трегубов Артем Николаевич &lt;tregubov@karelia.so-ups.ru&gt;; Трошкин Олег Сергеевич &lt;troshkin@karelia.so-ups.ru&gt;; Тулинов Александр Георгиевич &lt;tag@lenrdu.so-ups.ru&gt;; 
+Фадеев Алексей Сергеевич &lt;FadeevAS@novrdu.so-ups.ru&gt;; Фомин Стефан Геннадьевич &lt;fomin@odusz.so-ups.ru&gt;; Фролов Дмитрий Ананьевич &lt;frolovda@balticrdu.so-ups.ru&gt;; 
+Чабан Максим Валерьевич &lt;chabanmv@balticrdu.so-ups.ru&gt;; 
+Шевченко Вадим Александрович &lt;SHEVCHENKOVA@balticrdu.so-ups.ru&gt;; Шереметьев Илья Николаевич &lt;SheremetevIN@novrdu.so-ups.ru&gt;; Шилов Александр Андреевич &lt;shilov_a@odusz.so-ups.ru&gt;; 
+Ющак Татьяна Петровна &lt;tpuschak@kola.so-ups.ru&gt;; 
+Яковенко Петр Олегович &lt;yakovenkopo@balticrdu.so-ups.ru&gt;; Яковлев Денис Сергеевич &lt;yds@arhrdu.so-ups.ru&gt;; Якубчик Екатерина Андреевна &lt;katja@odusz.so-ups.ru&gt;; </value>
+  </data>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>55</value>
+    <value>25</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

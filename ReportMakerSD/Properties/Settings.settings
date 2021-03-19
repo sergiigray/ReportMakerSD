@@ -41,30 +41,6 @@
     <Setting Name="Report_based_SheetsName" Type="System.String" Scope="User">
       <Value Profile="(Default)">Зарегистрированные обращения:График:ФГП:ФГП2:По источнику оповещения</Value>
     </Setting>
-    <Setting Name="ReportODU_MailCopy" Type="System.String" Scope="User">
-      <Value Profile="(Default)">info_sd@odusz.so-ups.ru; blinov-al@odusz.so-ups.ru; alpatskiy-an@odusz.so-ups.ru; stis@odusz.so-ups.ru; nasonov@odusz.so-ups.ru; tihonov_r@odusz.so-ups.ru</Value>
-    </Setting>
-    <Setting Name="ReportRDU_MailTO" Type="System.String" Scope="User">
-      <Value Profile="(Default)">vif@arhrdu.so-ups.ru; glebov@balticrdu.so-ups.ru; shlyakov@karelia.so-ups.ru; iklouzay@kola.so-ups.ru; potoskuev@komirdu.so-ups.ru; msa@lenrdu.so-ups.ru; povyshevvi@novrdu.so-ups.ru; maltsev@odusz.so-ups.ru</Value>
-    </Setting>
-    <Setting Name="ReportRDU_MailCopy" Type="System.String" Scope="User">
-      <Value Profile="(Default)">maksim@odusz.so-ups.ru; info_sd@odusz.so-ups.ru; alpatskiy-an@odusz.so-ups.ru; stis@odusz.so-ups.ru; nasonov@odusz.so-ups.ru; tihonov_r@odusz.so-ups.ru</Value>
-    </Setting>
-    <Setting Name="ReportTO_MailTO" Type="System.String" Scope="User">
-      <Value Profile="(Default)">kava@odusz.so-ups.ru; nikolaev@odusz.so-ups.ru; smirnov@odusz.so-ups.ru; makarov@odusz.so-ups.ru; hicom@odusz.so-ups.ru; maksim@odusz.so-ups.ru; chulkov@odusz.so-ups.ru; maltsev@odusz.so-ups.ru; vif@arhrdu.so-ups.ru; glebov@balticrdu.so-ups.ru; shlyakov@karelia.so-ups.ru; iklouzay@kola.so-ups.ru; potoskuev@komirdu.so-ups.ru; msa@lenrdu.so-ups.ru; sazonov-ig@odusz.so-ups.ru; PovyshevVI@novrdu.so-ups.ru; alyabiev-nv@odusz.so-ups.ru 
-
-
-</Value>
-    </Setting>
-    <Setting Name="ReportTO_MailCopy" Type="System.String" Scope="User">
-      <Value Profile="(Default)">lopintsev@odusz.so-ups.ru; pyatnitskiy-ev@odusz.so-ups.ru; blinov-al@odusz.so-ups.ru; info_sd@odusz.so-ups.ru; tihonov_r@odusz.so-ups.ru</Value>
-    </Setting>
-    <Setting Name="Report_SD" Type="System.String" Scope="User">
-      <Value Profile="(Default)">info_sd@odusz.so-ups.ru;</Value>
-    </Setting>
-    <Setting Name="ReportODU_MailTO" Type="System.String" Scope="User">
-      <Value Profile="(Default)">kava@odusz.so-ups.ru; adv@odusz.so-ups.ru; nikolaev@odusz.so-ups.ru; smirnov@odusz.so-ups.ru; makarov@odusz.so-ups.ru; hicom@odusz.so-ups.ru; maksim@odusz.so-ups.ru; chulkov@odusz.so-ups.ru; maltsev@odusz.so-ups.ru; sazonov-ig@odusz.so-ups.ru </Value>
-    </Setting>
     <Setting Name="InstallPath" Type="System.String" Scope="User">
       <Value Profile="(Default)">\\srv-fss-oducz\SOE_ASU-SD\ТРСОО\ReportMakerSD\</Value>
     </Setting>

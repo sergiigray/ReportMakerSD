@@ -12,7 +12,7 @@ namespace ReportMakerSD.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.2.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "16.4.0.0")]
     internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
         
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
@@ -177,101 +177,6 @@ namespace ReportMakerSD.Properties {
             }
             set {
                 this["Report_based_SheetsName"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("info_sd@odusz.so-ups.ru; blinov-al@odusz.so-ups.ru; alpatskiy-an@odusz.so-ups.ru;" +
-            " stis@odusz.so-ups.ru; nasonov@odusz.so-ups.ru; tihonov_r@odusz.so-ups.ru")]
-        public string ReportODU_MailCopy {
-            get {
-                return ((string)(this["ReportODU_MailCopy"]));
-            }
-            set {
-                this["ReportODU_MailCopy"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("vif@arhrdu.so-ups.ru; glebov@balticrdu.so-ups.ru; shlyakov@karelia.so-ups.ru; ikl" +
-            "ouzay@kola.so-ups.ru; potoskuev@komirdu.so-ups.ru; msa@lenrdu.so-ups.ru; povyshe" +
-            "vvi@novrdu.so-ups.ru; maltsev@odusz.so-ups.ru")]
-        public string ReportRDU_MailTO {
-            get {
-                return ((string)(this["ReportRDU_MailTO"]));
-            }
-            set {
-                this["ReportRDU_MailTO"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("maksim@odusz.so-ups.ru; info_sd@odusz.so-ups.ru; alpatskiy-an@odusz.so-ups.ru; st" +
-            "is@odusz.so-ups.ru; nasonov@odusz.so-ups.ru; tihonov_r@odusz.so-ups.ru")]
-        public string ReportRDU_MailCopy {
-            get {
-                return ((string)(this["ReportRDU_MailCopy"]));
-            }
-            set {
-                this["ReportRDU_MailCopy"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute(@"kava@odusz.so-ups.ru; nikolaev@odusz.so-ups.ru; smirnov@odusz.so-ups.ru; makarov@odusz.so-ups.ru; hicom@odusz.so-ups.ru; maksim@odusz.so-ups.ru; chulkov@odusz.so-ups.ru; maltsev@odusz.so-ups.ru; vif@arhrdu.so-ups.ru; glebov@balticrdu.so-ups.ru; shlyakov@karelia.so-ups.ru; iklouzay@kola.so-ups.ru; potoskuev@komirdu.so-ups.ru; msa@lenrdu.so-ups.ru; sazonov-ig@odusz.so-ups.ru; PovyshevVI@novrdu.so-ups.ru; alyabiev-nv@odusz.so-ups.ru 
-
-
-")]
-        public string ReportTO_MailTO {
-            get {
-                return ((string)(this["ReportTO_MailTO"]));
-            }
-            set {
-                this["ReportTO_MailTO"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("lopintsev@odusz.so-ups.ru; pyatnitskiy-ev@odusz.so-ups.ru; blinov-al@odusz.so-ups" +
-            ".ru; info_sd@odusz.so-ups.ru; tihonov_r@odusz.so-ups.ru")]
-        public string ReportTO_MailCopy {
-            get {
-                return ((string)(this["ReportTO_MailCopy"]));
-            }
-            set {
-                this["ReportTO_MailCopy"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("info_sd@odusz.so-ups.ru;")]
-        public string Report_SD {
-            get {
-                return ((string)(this["Report_SD"]));
-            }
-            set {
-                this["Report_SD"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("kava@odusz.so-ups.ru; adv@odusz.so-ups.ru; nikolaev@odusz.so-ups.ru; smirnov@odus" +
-            "z.so-ups.ru; makarov@odusz.so-ups.ru; hicom@odusz.so-ups.ru; maksim@odusz.so-ups" +
-            ".ru; chulkov@odusz.so-ups.ru; maltsev@odusz.so-ups.ru; sazonov-ig@odusz.so-ups.r" +
-            "u ")]
-        public string ReportODU_MailTO {
-            get {
-                return ((string)(this["ReportODU_MailTO"]));
-            }
-            set {
-                this["ReportODU_MailTO"] = value;
             }
         }
         

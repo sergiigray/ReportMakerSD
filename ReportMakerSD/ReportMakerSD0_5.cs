@@ -15,7 +15,7 @@ namespace ReportMakerSD
             List<string> ColumnsReport0 = new List<string>() { "Дата окончания регистрации", "Номер", "Статус", "Организация заявителя", "Заявитель", "ФГП", "Исполнитель", "Услуга", "Тема", "Описание (для списков)", "Код ожидания", "Причина ожидания", "Срок ожидания", "Расчетная дата решения обращения", "Просрочен на (выполнение)" };
 
             // Сортируем по организации заявителя
-            var SDR0Data0Sorted = MainForm.SDR0Data0.OrderByDescending(x => x.DateEndReg).ToList();
+            var SDR0Data0Sorted = Form0.SDR0Data0.OrderByDescending(x => x.DateEndReg).ToList();
             //Формируем отчетный файл
             using (var package = new ExcelPackage())
             {
@@ -29,7 +29,7 @@ namespace ReportMakerSD
                     worksheet1.Cells[1, countColumns + 1].Value = ColumnsReport;
                     if (ColumnsReport.IndexOf("Просро") >= 0)
                     {
-                        worksheet1.Cells[1, countColumns + 1].Value = worksheet1.Cells[1, countColumns + 1].Value + " по состоянию на " + MainForm.SDR0Data;
+                        worksheet1.Cells[1, countColumns + 1].Value = worksheet1.Cells[1, countColumns + 1].Value + " по состоянию на " + Form0.SDR0Data;
                     }
                     countColumns++;
                 }
@@ -40,7 +40,7 @@ namespace ReportMakerSD
                     worksheet2.Cells[1, countColumns + 1].Value = ColumnsReport;
                     if (ColumnsReport.IndexOf("Просро") >= 0)
                     {
-                        worksheet2.Cells[1, countColumns + 1].Value = worksheet2.Cells[1, countColumns + 1].Value + " по состоянию на " + MainForm.SDR0Data;
+                        worksheet2.Cells[1, countColumns + 1].Value = worksheet2.Cells[1, countColumns + 1].Value + " по состоянию на " + Form0.SDR0Data;
                     }
                     countColumns++;
                 }

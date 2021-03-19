@@ -71,12 +71,12 @@ namespace ReportMakerSD
         public const string WaitingReason_Name = "Причина ожидания";
         public static int WaitingReason_ColumnLoad { get; set; } = 0;
 
-        public DateTime DateCalc { get; set; } //Расчетная дата решения обращения
-        public static string Name13 { get { return "Расчетная дата решения обращения"; } }
-        public const string DateCalc_Name = "Расчетная дата решения обращения";
+        public DateTime? DateCalc { get; set; } //Расчетная дата решения обращения
+        public static string Name13 { get { return "Расчетная дата решения обращения (для Заявителя)"; } }
+        public const string DateCalc_Name = "Расчетная дата решения обращения (для Заявителя)";
         public static int DateCalc_ColumnLoad { get; set; } = 0;
 
-        public string DateWait { get; set; } //Срок ожидания
+        public DateTime? DateWait { get; set; } //Срок ожидания
         public static string Name14 { get { return "Срок ожидания"; } }
         public const string DateWait_Name = "Срок ожидания";
         public static int DateWait_ColumnLoad { get; set; } = 0;
@@ -234,10 +234,16 @@ namespace ReportMakerSD
                     if (WaitingCode_ColumnLoad != 0) tWaitingCode = worksheetData.Cells[firstRowCell.Start.Row, WaitingCode_ColumnLoad].Text;
                     string tWaitingReason = "";
                     if (WaitingReason_ColumnLoad != 0) tWaitingReason = worksheetData.Cells[firstRowCell.Start.Row, WaitingReason_ColumnLoad].Text;
-                    DateTime tDateCalc = DateTime.Now;
-                    if (DateCalc_ColumnLoad != 0) tDateCalc = DateTime.FromOADate(double.Parse(worksheetData.Cells[firstRowCell.Start.Row, DateCalc_ColumnLoad].Value.ToString()));
-                    string tDateWait = "";
-                    if (DateWait_ColumnLoad != 0) tDateWait = worksheetData.Cells[firstRowCell.Start.Row, DateWait_ColumnLoad].Text;
+                    //DateTime tDateCalc = DateTime.Now;
+                    DateTime? tDateCalc = null;
+                    if (DateCalc_ColumnLoad != 0 && (worksheetData.Cells[firstRowCell.Start.Row, DateCalc_ColumnLoad].Value) != null) tDateCalc = DateTime.FromOADate(double.Parse(worksheetData.Cells[firstRowCell.Start.Row, DateCalc_ColumnLoad].Value.ToString()));
+                    //if (worksheetData.Cells[firstRowCell.Start.Row, DateCalc_ColumnLoad].Value != null)
+                    //{
+                    //    if (DateCalc_ColumnLoad != 0) tDateCalc = DateTime.FromOADate(double.Parse(worksheetData.Cells[firstRowCell.Start.Row, DateCalc_ColumnLoad].Value.ToString()));
+                    //}
+
+                    DateTime? tDateWait = null;
+                    if (DateWait_ColumnLoad != 0 && (worksheetData.Cells[firstRowCell.Start.Row, DateWait_ColumnLoad].Value) != null) tDateWait = DateTime.FromOADate(double.Parse(worksheetData.Cells[firstRowCell.Start.Row, DateWait_ColumnLoad].Value.ToString()));
                     string tExpired = "";
                     if (Expired_ColumnLoad != 0) tExpired = worksheetData.Cells[firstRowCell.Start.Row, Expired_ColumnLoad].Text;
                     string tRating = "";

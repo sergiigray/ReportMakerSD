@@ -3,7 +3,7 @@ using System.ComponentModel;
 
 namespace ReportMakerSD
 {
-    partial class MainForm
+    public partial class Form0
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -31,7 +31,7 @@ namespace ReportMakerSD
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form0));
             this.openFileDialog_ExportSDSelect = new System.Windows.Forms.OpenFileDialog();
             this.dateTimePicker_TimeFrom = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker_TimeTo = new System.Windows.Forms.DateTimePicker();
@@ -40,33 +40,25 @@ namespace ReportMakerSD
             this.textBox_FileExportSDName = new System.Windows.Forms.TextBox();
             this.button_ExportSDSelect = new System.Windows.Forms.Button();
             this.label_FileExportSDName = new System.Windows.Forms.Label();
-            this.textBox_DebugInfo = new System.Windows.Forms.TextBox();
             this.button_parsingReport = new System.Windows.Forms.Button();
             this.button_SendMail = new System.Windows.Forms.Button();
-            this.checkBox_ReportTO = new System.Windows.Forms.CheckBox();
             this.button_OpenFolder = new System.Windows.Forms.Button();
             this.panel_Button = new System.Windows.Forms.Panel();
-            this.panel_textBox = new System.Windows.Forms.Panel();
             this.panel_DateTime = new System.Windows.Forms.Panel();
             this.comboBox_SelectPeriod = new System.Windows.Forms.ComboBox();
             this.panel_Report = new System.Windows.Forms.Panel();
-            this.checkBox_Report4 = new System.Windows.Forms.CheckBox();
-            this.checkBox_Report5 = new System.Windows.Forms.CheckBox();
             this.checkBox_Report3 = new System.Windows.Forms.CheckBox();
             this.checkBox_Report2 = new System.Windows.Forms.CheckBox();
-            this.checkBox_ReportOne = new System.Windows.Forms.CheckBox();
-            this.checkBox_ReportBase = new System.Windows.Forms.CheckBox();
+            this.checkBox_Report1 = new System.Windows.Forms.CheckBox();
             this.panel_Files = new System.Windows.Forms.Panel();
-            this.backgroundWorker = new System.ComponentModel.BackgroundWorker();
-            this.panel_ProgressBar = new System.Windows.Forms.Panel();
-            this.progressBar = new System.Windows.Forms.ProgressBar();
-            this.checkBox_DebugInfo = new System.Windows.Forms.CheckBox();
+            this.panel_WeekMailTo = new System.Windows.Forms.Panel();
+            this.textBox_WeekMailTo = new System.Windows.Forms.TextBox();
+            this.label_WeekMailTo = new System.Windows.Forms.Label();
             this.panel_Button.SuspendLayout();
-            this.panel_textBox.SuspendLayout();
             this.panel_DateTime.SuspendLayout();
             this.panel_Report.SuspendLayout();
             this.panel_Files.SuspendLayout();
-            this.panel_ProgressBar.SuspendLayout();
+            this.panel_WeekMailTo.SuspendLayout();
             this.SuspendLayout();
             // 
             // openFileDialog_ExportSDSelect
@@ -82,7 +74,7 @@ namespace ReportMakerSD
             this.dateTimePicker_TimeFrom.Name = "dateTimePicker_TimeFrom";
             this.dateTimePicker_TimeFrom.Size = new System.Drawing.Size(125, 20);
             this.dateTimePicker_TimeFrom.TabIndex = 2;
-            this.dateTimePicker_TimeFrom.Value = new System.DateTime(2016, 7, 27, 8, 30, 0, 0);
+            this.dateTimePicker_TimeFrom.Value = new System.DateTime(2020, 3, 10, 0, 0, 0, 0);
             // 
             // dateTimePicker_TimeTo
             // 
@@ -93,7 +85,7 @@ namespace ReportMakerSD
             this.dateTimePicker_TimeTo.Name = "dateTimePicker_TimeTo";
             this.dateTimePicker_TimeTo.Size = new System.Drawing.Size(125, 20);
             this.dateTimePicker_TimeTo.TabIndex = 3;
-            this.dateTimePicker_TimeTo.Value = new System.DateTime(2016, 7, 27, 8, 30, 0, 0);
+            this.dateTimePicker_TimeTo.Value = new System.DateTime(2020, 3, 10, 23, 59, 0, 0);
             // 
             // label_TimeFrom
             // 
@@ -139,30 +131,16 @@ namespace ReportMakerSD
             this.label_FileExportSDName.AutoSize = true;
             this.label_FileExportSDName.Location = new System.Drawing.Point(3, 4);
             this.label_FileExportSDName.Name = "label_FileExportSDName";
-            this.label_FileExportSDName.Size = new System.Drawing.Size(154, 13);
+            this.label_FileExportSDName.Size = new System.Drawing.Size(157, 13);
             this.label_FileExportSDName.TabIndex = 1;
-            this.label_FileExportSDName.Text = "Файл с исходными данными";
-            // 
-            // textBox_DebugInfo
-            // 
-            this.textBox_DebugInfo.AcceptsReturn = true;
-            this.textBox_DebugInfo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.textBox_DebugInfo.Location = new System.Drawing.Point(0, 0);
-            this.textBox_DebugInfo.Multiline = true;
-            this.textBox_DebugInfo.Name = "textBox_DebugInfo";
-            this.textBox_DebugInfo.ReadOnly = true;
-            this.textBox_DebugInfo.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBox_DebugInfo.Size = new System.Drawing.Size(682, 215);
-            this.textBox_DebugInfo.TabIndex = 0;
-            this.textBox_DebugInfo.TabStop = false;
-            this.textBox_DebugInfo.WordWrap = false;
+            this.label_FileExportSDName.Text = "Файл с исходными данными:";
             // 
             // button_parsingReport
             // 
             this.button_parsingReport.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.button_parsingReport.Location = new System.Drawing.Point(0, 3);
             this.button_parsingReport.Name = "button_parsingReport";
-            this.button_parsingReport.Size = new System.Drawing.Size(135, 23);
+            this.button_parsingReport.Size = new System.Drawing.Size(170, 23);
             this.button_parsingReport.TabIndex = 0;
             this.button_parsingReport.Text = "Обработка данных";
             this.button_parsingReport.UseVisualStyleBackColor = true;
@@ -172,35 +150,21 @@ namespace ReportMakerSD
             // 
             this.button_SendMail.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.button_SendMail.Enabled = false;
-            this.button_SendMail.Location = new System.Drawing.Point(547, 3);
+            this.button_SendMail.Location = new System.Drawing.Point(521, 3);
             this.button_SendMail.Name = "button_SendMail";
-            this.button_SendMail.Size = new System.Drawing.Size(135, 23);
+            this.button_SendMail.Size = new System.Drawing.Size(170, 23);
             this.button_SendMail.TabIndex = 0;
             this.button_SendMail.Text = "Отправка писем";
             this.button_SendMail.UseVisualStyleBackColor = true;
             this.button_SendMail.Click += new System.EventHandler(this.button_SendMail_Click);
             // 
-            // checkBox_ReportTO
-            // 
-            this.checkBox_ReportTO.AutoSize = true;
-            this.checkBox_ReportTO.Enabled = false;
-            this.checkBox_ReportTO.ForeColor = System.Drawing.SystemColors.ActiveBorder;
-            this.checkBox_ReportTO.Location = new System.Drawing.Point(134, 3);
-            this.checkBox_ReportTO.Name = "checkBox_ReportTO";
-            this.checkBox_ReportTO.Size = new System.Drawing.Size(207, 17);
-            this.checkBox_ReportTO.TabIndex = 0;
-            this.checkBox_ReportTO.TabStop = false;
-            this.checkBox_ReportTO.Text = "Отчет по подрядным организациям";
-            this.checkBox_ReportTO.UseVisualStyleBackColor = true;
-            this.checkBox_ReportTO.Visible = false;
-            // 
             // button_OpenFolder
             // 
             this.button_OpenFolder.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.button_OpenFolder.Enabled = false;
-            this.button_OpenFolder.Location = new System.Drawing.Point(258, 3);
+            this.button_OpenFolder.Location = new System.Drawing.Point(262, 3);
             this.button_OpenFolder.Name = "button_OpenFolder";
-            this.button_OpenFolder.Size = new System.Drawing.Size(162, 23);
+            this.button_OpenFolder.Size = new System.Drawing.Size(170, 23);
             this.button_OpenFolder.TabIndex = 0;
             this.button_OpenFolder.TabStop = false;
             this.button_OpenFolder.Text = "Открыть папку с отчетами";
@@ -209,25 +173,15 @@ namespace ReportMakerSD
             // 
             // panel_Button
             // 
-            this.panel_Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.panel_Button.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel_Button.Controls.Add(this.button_parsingReport);
             this.panel_Button.Controls.Add(this.button_OpenFolder);
             this.panel_Button.Controls.Add(this.button_SendMail);
-            this.panel_Button.Location = new System.Drawing.Point(0, 465);
+            this.panel_Button.Location = new System.Drawing.Point(0, 314);
             this.panel_Button.Name = "panel_Button";
-            this.panel_Button.Size = new System.Drawing.Size(682, 29);
+            this.panel_Button.Size = new System.Drawing.Size(691, 29);
             this.panel_Button.TabIndex = 0;
-            // 
-            // panel_textBox
-            // 
-            this.panel_textBox.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel_textBox.Controls.Add(this.textBox_DebugInfo);
-            this.panel_textBox.Location = new System.Drawing.Point(0, 215);
-            this.panel_textBox.Name = "panel_textBox";
-            this.panel_textBox.Size = new System.Drawing.Size(682, 215);
-            this.panel_textBox.TabIndex = 8;
             // 
             // panel_DateTime
             // 
@@ -236,23 +190,20 @@ namespace ReportMakerSD
             this.panel_DateTime.Controls.Add(this.label_TimeFrom);
             this.panel_DateTime.Controls.Add(this.dateTimePicker_TimeTo);
             this.panel_DateTime.Controls.Add(this.label_TimeTo);
-            this.panel_DateTime.Location = new System.Drawing.Point(0, 149);
+            this.panel_DateTime.Location = new System.Drawing.Point(0, 98);
             this.panel_DateTime.Name = "panel_DateTime";
             this.panel_DateTime.Size = new System.Drawing.Size(473, 49);
             this.panel_DateTime.TabIndex = 0;
             // 
             // comboBox_SelectPeriod
             // 
+            this.comboBox_SelectPeriod.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox_SelectPeriod.FormattingEnabled = true;
             this.comboBox_SelectPeriod.Items.AddRange(new object[] {
+            "За прошлую неделю",
             "За текущую неделю",
             "За 7 дней",
-            "За прошлую неделю",
-            "За прошлый месяц",
-            "За текущий квартал",
-            "За текущие полгода",
-            "За текущий год",
-            "За неделю"});
+            "За прошлый месяц"});
             this.comboBox_SelectPeriod.Location = new System.Drawing.Point(288, 19);
             this.comboBox_SelectPeriod.Name = "comboBox_SelectPeriod";
             this.comboBox_SelectPeriod.Size = new System.Drawing.Size(185, 21);
@@ -261,51 +212,19 @@ namespace ReportMakerSD
             // 
             // panel_Report
             // 
-            this.panel_Report.Controls.Add(this.checkBox_Report4);
-            this.panel_Report.Controls.Add(this.checkBox_Report5);
             this.panel_Report.Controls.Add(this.checkBox_Report3);
             this.panel_Report.Controls.Add(this.checkBox_Report2);
-            this.panel_Report.Controls.Add(this.checkBox_ReportOne);
-            this.panel_Report.Controls.Add(this.checkBox_ReportBase);
-            this.panel_Report.Controls.Add(this.checkBox_ReportTO);
+            this.panel_Report.Controls.Add(this.checkBox_Report1);
             this.panel_Report.Location = new System.Drawing.Point(0, 49);
             this.panel_Report.Name = "panel_Report";
-            this.panel_Report.Size = new System.Drawing.Size(682, 94);
+            this.panel_Report.Size = new System.Drawing.Size(691, 44);
             this.panel_Report.TabIndex = 0;
-            // 
-            // checkBox_Report4
-            // 
-            this.checkBox_Report4.AutoSize = true;
-            this.checkBox_Report4.Checked = true;
-            this.checkBox_Report4.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox_Report4.ForeColor = System.Drawing.Color.DarkOliveGreen;
-            this.checkBox_Report4.Location = new System.Drawing.Point(3, 3);
-            this.checkBox_Report4.Name = "checkBox_Report4";
-            this.checkBox_Report4.Size = new System.Drawing.Size(207, 17);
-            this.checkBox_Report4.TabIndex = 0;
-            this.checkBox_Report4.TabStop = false;
-            this.checkBox_Report4.Text = "Отчет по подрядным организациям";
-            this.checkBox_Report4.UseVisualStyleBackColor = true;
-            // 
-            // checkBox_Report5
-            // 
-            this.checkBox_Report5.AutoSize = true;
-            this.checkBox_Report5.Checked = true;
-            this.checkBox_Report5.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox_Report5.ForeColor = System.Drawing.Color.ForestGreen;
-            this.checkBox_Report5.Location = new System.Drawing.Point(3, 26);
-            this.checkBox_Report5.Name = "checkBox_Report5";
-            this.checkBox_Report5.Size = new System.Drawing.Size(125, 17);
-            this.checkBox_Report5.TabIndex = 0;
-            this.checkBox_Report5.TabStop = false;
-            this.checkBox_Report5.Text = "Отчет по филиалам";
-            this.checkBox_Report5.UseVisualStyleBackColor = true;
             // 
             // checkBox_Report3
             // 
             this.checkBox_Report3.AutoSize = true;
             this.checkBox_Report3.ForeColor = System.Drawing.Color.Violet;
-            this.checkBox_Report3.Location = new System.Drawing.Point(364, 49);
+            this.checkBox_Report3.Location = new System.Drawing.Point(3, 24);
             this.checkBox_Report3.Name = "checkBox_Report3";
             this.checkBox_Report3.Size = new System.Drawing.Size(76, 17);
             this.checkBox_Report3.TabIndex = 0;
@@ -316,8 +235,10 @@ namespace ReportMakerSD
             // checkBox_Report2
             // 
             this.checkBox_Report2.AutoSize = true;
+            this.checkBox_Report2.Checked = true;
+            this.checkBox_Report2.CheckState = System.Windows.Forms.CheckState.Checked;
             this.checkBox_Report2.ForeColor = System.Drawing.Color.Maroon;
-            this.checkBox_Report2.Location = new System.Drawing.Point(364, 3);
+            this.checkBox_Report2.Location = new System.Drawing.Point(3, 3);
             this.checkBox_Report2.Name = "checkBox_Report2";
             this.checkBox_Report2.Size = new System.Drawing.Size(244, 17);
             this.checkBox_Report2.TabIndex = 0;
@@ -325,28 +246,19 @@ namespace ReportMakerSD
             this.checkBox_Report2.Text = "Нерешенные по подрядным организациям";
             this.checkBox_Report2.UseVisualStyleBackColor = true;
             // 
-            // checkBox_ReportOne
+            // checkBox_Report1
             // 
-            this.checkBox_ReportOne.AutoSize = true;
-            this.checkBox_ReportOne.ForeColor = System.Drawing.Color.Crimson;
-            this.checkBox_ReportOne.Location = new System.Drawing.Point(364, 26);
-            this.checkBox_ReportOne.Name = "checkBox_ReportOne";
-            this.checkBox_ReportOne.Size = new System.Drawing.Size(240, 17);
-            this.checkBox_ReportOne.TabIndex = 0;
-            this.checkBox_ReportOne.TabStop = false;
-            this.checkBox_ReportOne.Text = "Нерешенные по дате решения обращения";
-            this.checkBox_ReportOne.UseVisualStyleBackColor = true;
-            // 
-            // checkBox_ReportBase
-            // 
-            this.checkBox_ReportBase.AutoSize = true;
-            this.checkBox_ReportBase.Location = new System.Drawing.Point(3, 72);
-            this.checkBox_ReportBase.Name = "checkBox_ReportBase";
-            this.checkBox_ReportBase.Size = new System.Drawing.Size(250, 17);
-            this.checkBox_ReportBase.TabIndex = 0;
-            this.checkBox_ReportBase.TabStop = false;
-            this.checkBox_ReportBase.Text = "Обращения зарегистрированные за период";
-            this.checkBox_ReportBase.UseVisualStyleBackColor = true;
+            this.checkBox_Report1.AutoSize = true;
+            this.checkBox_Report1.Checked = true;
+            this.checkBox_Report1.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.checkBox_Report1.ForeColor = System.Drawing.Color.Crimson;
+            this.checkBox_Report1.Location = new System.Drawing.Point(288, 3);
+            this.checkBox_Report1.Name = "checkBox_Report1";
+            this.checkBox_Report1.Size = new System.Drawing.Size(240, 17);
+            this.checkBox_Report1.TabIndex = 0;
+            this.checkBox_Report1.TabStop = false;
+            this.checkBox_Report1.Text = "Нерешенные по дате решения обращения";
+            this.checkBox_Report1.UseVisualStyleBackColor = true;
             // 
             // panel_Files
             // 
@@ -355,71 +267,64 @@ namespace ReportMakerSD
             this.panel_Files.Controls.Add(this.textBox_FileExportSDName);
             this.panel_Files.Location = new System.Drawing.Point(0, 1);
             this.panel_Files.Name = "panel_Files";
-            this.panel_Files.Size = new System.Drawing.Size(682, 42);
+            this.panel_Files.Size = new System.Drawing.Size(691, 42);
             this.panel_Files.TabIndex = 0;
             // 
-            // backgroundWorker
+            // panel_WeekMailTo
             // 
-            this.backgroundWorker.WorkerReportsProgress = true;
-            this.backgroundWorker.WorkerSupportsCancellation = true;
-            this.backgroundWorker.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker_DoWork);
-            this.backgroundWorker.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.backgroundWorker_ProgressChanged);
-            this.backgroundWorker.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker_RunWorkerCompleted);
-            // 
-            // panel_ProgressBar
-            // 
-            this.panel_ProgressBar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            this.panel_WeekMailTo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel_ProgressBar.Controls.Add(this.progressBar);
-            this.panel_ProgressBar.Location = new System.Drawing.Point(0, 428);
-            this.panel_ProgressBar.Name = "panel_ProgressBar";
-            this.panel_ProgressBar.Size = new System.Drawing.Size(682, 34);
-            this.panel_ProgressBar.TabIndex = 9;
+            this.panel_WeekMailTo.Controls.Add(this.textBox_WeekMailTo);
+            this.panel_WeekMailTo.Location = new System.Drawing.Point(0, 166);
+            this.panel_WeekMailTo.Name = "panel_WeekMailTo";
+            this.panel_WeekMailTo.Size = new System.Drawing.Size(691, 145);
+            this.panel_WeekMailTo.TabIndex = 11;
             // 
-            // progressBar
+            // textBox_WeekMailTo
             // 
-            this.progressBar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.progressBar.Location = new System.Drawing.Point(0, 0);
-            this.progressBar.Name = "progressBar";
-            this.progressBar.Size = new System.Drawing.Size(682, 34);
-            this.progressBar.TabIndex = 0;
+            this.textBox_WeekMailTo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.textBox_WeekMailTo.Location = new System.Drawing.Point(0, 0);
+            this.textBox_WeekMailTo.Multiline = true;
+            this.textBox_WeekMailTo.Name = "textBox_WeekMailTo";
+            this.textBox_WeekMailTo.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.textBox_WeekMailTo.Size = new System.Drawing.Size(691, 145);
+            this.textBox_WeekMailTo.TabIndex = 0;
+            this.textBox_WeekMailTo.Tag = "";
+            this.textBox_WeekMailTo.Text = resources.GetString("textBox_WeekMailTo.Text");
+            this.textBox_WeekMailTo.TextChanged += new System.EventHandler(this.textBox_WeekMailTo_TextChanged);
             // 
-            // checkBox_DebugInfo
+            // label_WeekMailTo
             // 
-            this.checkBox_DebugInfo.AutoSize = true;
-            this.checkBox_DebugInfo.Location = new System.Drawing.Point(3, 194);
-            this.checkBox_DebugInfo.Name = "checkBox_DebugInfo";
-            this.checkBox_DebugInfo.Size = new System.Drawing.Size(212, 17);
-            this.checkBox_DebugInfo.TabIndex = 10;
-            this.checkBox_DebugInfo.TabStop = false;
-            this.checkBox_DebugInfo.Text = "Вывод дополнительной информации";
-            this.checkBox_DebugInfo.UseVisualStyleBackColor = true;
+            this.label_WeekMailTo.AutoSize = true;
+            this.label_WeekMailTo.Location = new System.Drawing.Point(3, 150);
+            this.label_WeekMailTo.Name = "label_WeekMailTo";
+            this.label_WeekMailTo.Size = new System.Drawing.Size(283, 13);
+            this.label_WeekMailTo.TabIndex = 12;
+            this.label_WeekMailTo.Text = "Почтовые адреса получателей еженедельного отчета:";
             // 
-            // MainForm
+            // Form0
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(682, 498);
-            this.Controls.Add(this.checkBox_DebugInfo);
-            this.Controls.Add(this.panel_ProgressBar);
+            this.ClientSize = new System.Drawing.Size(691, 342);
+            this.Controls.Add(this.label_WeekMailTo);
+            this.Controls.Add(this.panel_WeekMailTo);
             this.Controls.Add(this.panel_Files);
-            this.Controls.Add(this.panel_Report);
             this.Controls.Add(this.panel_DateTime);
-            this.Controls.Add(this.panel_textBox);
+            this.Controls.Add(this.panel_Report);
             this.Controls.Add(this.panel_Button);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "MainForm";
+            this.Name = "Form0";
             this.Text = "ReportMakerSD";
             this.panel_Button.ResumeLayout(false);
-            this.panel_textBox.ResumeLayout(false);
-            this.panel_textBox.PerformLayout();
             this.panel_DateTime.ResumeLayout(false);
             this.panel_DateTime.PerformLayout();
             this.panel_Report.ResumeLayout(false);
             this.panel_Report.PerformLayout();
             this.panel_Files.ResumeLayout(false);
             this.panel_Files.PerformLayout();
-            this.panel_ProgressBar.ResumeLayout(false);
+            this.panel_WeekMailTo.ResumeLayout(false);
+            this.panel_WeekMailTo.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -450,27 +355,20 @@ namespace ReportMakerSD
         private System.Windows.Forms.TextBox textBox_FileExportSDName;
         private System.Windows.Forms.Button button_ExportSDSelect;
         private System.Windows.Forms.Label label_FileExportSDName;
-        private System.Windows.Forms.TextBox textBox_DebugInfo;
         private System.Windows.Forms.Button button_parsingReport;
         private System.Windows.Forms.Button button_SendMail;
-        public System.Windows.Forms.CheckBox checkBox_ReportTO;
         private System.Windows.Forms.Button button_OpenFolder;
         private System.Windows.Forms.Panel panel_Button;
-        private System.Windows.Forms.Panel panel_textBox;
         private System.Windows.Forms.Panel panel_DateTime;
         private System.Windows.Forms.Panel panel_Report;
         private System.Windows.Forms.Panel panel_Files;
-        public System.Windows.Forms.CheckBox checkBox_ReportBase;
-        private System.Windows.Forms.Panel panel_ProgressBar;
-        private System.Windows.Forms.ProgressBar progressBar;
         private System.Windows.Forms.ComboBox comboBox_SelectPeriod;
-        public System.ComponentModel.BackgroundWorker backgroundWorker;
-        public System.Windows.Forms.CheckBox checkBox_ReportOne;
-        public System.Windows.Forms.CheckBox checkBox_DebugInfo;
+        public System.Windows.Forms.CheckBox checkBox_Report1;
         public System.Windows.Forms.CheckBox checkBox_Report2;
         public System.Windows.Forms.CheckBox checkBox_Report3;
-        public System.Windows.Forms.CheckBox checkBox_Report4;
-        public System.Windows.Forms.CheckBox checkBox_Report5;
+        private System.Windows.Forms.Panel panel_WeekMailTo;
+        private System.Windows.Forms.TextBox textBox_WeekMailTo;
+        private System.Windows.Forms.Label label_WeekMailTo;
     }
 }
 

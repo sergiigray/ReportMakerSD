@@ -4,15 +4,13 @@ using OfficeOpenXml.Table;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-
-// Отчет за месяц
+using System.Text;
 
 namespace ReportMakerSD
 {
-    public partial class SDR0
+    public class Class_SDR
     {
-
-        public static string ReportMonth(DateTime dateTimeTo, string ReportMonthName)
+        public string ReportMonth(DateTime dateTimeTo, string ReportMonthName)
         {
             List<string> ColumnsReport1 = new List<string>()
             {
@@ -424,6 +422,6 @@ namespace ReportMakerSD
                 return xlFile.FullName;
             }
         }
-
     }
 }
+
